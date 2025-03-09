@@ -10,6 +10,7 @@ def process_books(book_list):
         })
     return processed_books
 
+
 if __name__ == "__main__":
     from fetch_data import fetch_books_by_author
 

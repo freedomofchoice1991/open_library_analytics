@@ -2,6 +2,7 @@ import requests
 
 OPEN_LIBRARY_URL = "https://openlibrary.org/search.json"
 
+
 def fetch_books_by_author(author_name, limit=5):
     """Fetches book data by author name from Open Library API."""
     params = {"author": author_name, "limit": limit}
@@ -13,6 +14,7 @@ def fetch_books_by_author(author_name, limit=5):
     else:
         print(f"Error {response.status_code}: {response.text}")
         return []
+
 
 if __name__ == "__main__":
     books = fetch_books_by_author("George Orwell", 10)
