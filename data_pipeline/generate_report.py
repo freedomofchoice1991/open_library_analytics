@@ -17,6 +17,6 @@ if __name__ == "__main__":
     from process_data import process_books
     from fetch_data import fetch_books_by_author
 
-    books = fetch_books_by_author("George Orwell", 5)
+    books = fetch_books_by_author("J.K. Rowling", 8)
     processed_books = process_books(books)
     save_to_csv(processed_books)
