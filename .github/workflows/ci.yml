@@ -24,4 +24,6 @@ jobs:
         run: pip install flake8 && flake8 data_pipeline
 
       - name: Run Tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: pip install pytest && pytest tests
