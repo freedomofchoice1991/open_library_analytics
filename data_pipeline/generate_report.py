@@ -11,12 +11,3 @@ def save_to_csv(book_data, filename="book_report.csv"):
         writer.writerows(book_data)
 
     print(f"Report saved as {filename}")
-
-
-if __name__ == "__main__":
-    from process_data import process_books
-    from fetch_data import fetch_books_by_author
-
-    books = fetch_books_by_author("Charles Dickens", 5)
-    processed_books = process_books(books)
-    save_to_csv(processed_books)
